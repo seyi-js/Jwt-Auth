@@ -1,7 +1,7 @@
 {
-  "name": "blog-project",
+  "name": "jwt-token",
   "version": "1.0.0",
-  "description": "This is a personal project. A blogging app that allows the administrator to post articles written in HTML and css tags while been displayed to the users as a normal webpage.",
+  "description": "Jason Web Token",
   "main": "app.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -45,9 +45,13 @@
     "url": "git+https://github.com/seyi-js/Blog-Project.git"
   },
   "author": "ADEBAYO SAMUEL OLUWASEYI",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/seyi-js/Blog-Project/issues"
   },
-  "homepage": "https://github.com/seyi-js/Blog-Project#readme"
+  "homepage": "https://github.com/seyi-js/Blog-Project#readme",
+  "keywords": [
+    "\"express\"",
+    "\"nodemon\""
+  ]
 }
