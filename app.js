@@ -7,6 +7,31 @@ const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
+const jwt = require('jsonwebtoken')
+var authData;
+
+const generateToken = () => {
+  jwt.sign( { name:'My name is seyi'}, 'secretkey',{ expiresIn: '36s' }, (err, token) =>{
+    if ( err ) console.log( err )
+    console.log( token )
+    authData = token
+  });
+}
+
+
+
+const decode = () => {
+  jwt.verify(authData, 'secretkey', (err, data)=> {
+    if(err) {
+       console.log(err.message)
+    }else {
+        console.log(data)
+    }
+  });
+}
+//IF token is tampered with message === invalid token
+//IF token has Expired === jwt expired
+
 // mongoose.connect('mongodb://localhost:process.env.MONGO_URL_PORT/jwt',{ useNewUrlParser: true }, ()=> {
 //   console.log('DB connected')
 // })
