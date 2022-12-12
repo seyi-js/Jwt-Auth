@@ -11,7 +11,7 @@
     "connect-ensure-authenticated": "^1.0.8",
     "ejs": "^3.0.1",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.17.0",
     "express-messages": "^1.0.1",
